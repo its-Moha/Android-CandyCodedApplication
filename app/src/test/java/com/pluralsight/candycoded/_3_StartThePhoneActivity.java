@@ -143,7 +143,7 @@ public class _3_StartThePhoneActivity {
         try {
             inputStream = this.getClass().getClassLoader().getResourceAsStream(layoutFileName);
             XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
-            factory.setNamespaceAware(false);
+            factory.setNamespaceAware(true);
             XmlPullParser parser = factory.newPullParser();
             parser.setInput(inputStream, null);
             parser.nextTag();
