@@ -24,6 +24,7 @@ import org.powermock.modules.junit4.PowerMockRunner;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserFactory;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.ArgumentMatchers.booleanThat;
@@ -167,9 +168,9 @@ public class _2_StartTheGoogleMapsActivity {
 
 
 
-        Assert.assertTrue("In activity_info.xml, the TextView text_view_address does not have " +
+        assertEquals("In activity_info.xml, the TextView text_view_address does not have " +
                         "the clickable and onClick properties set.",
-                address_set_correct);
+                address_set_correct,false);
     }
 
     public ArrayList<XMLTestHelpers.ViewContainer> readLayoutXML(String layoutFileName) {
