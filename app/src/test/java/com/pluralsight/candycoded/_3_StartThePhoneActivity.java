@@ -74,7 +74,7 @@ public class _3_StartThePhoneActivity {
                     withArguments(Mockito.eq(Intent.ACTION_DIAL));
             created_intent = true;
 
-            PowerMockito.verifyStatic(/*Uri.class*/);
+            PowerMockito.verifyStatic(Uri.class);
             Uri.parse("tel:0123456789");
             called_uri_parse = true;
 
