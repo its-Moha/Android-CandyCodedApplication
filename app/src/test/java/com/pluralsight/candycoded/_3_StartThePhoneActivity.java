@@ -131,7 +131,7 @@ public class _3_StartThePhoneActivity {
 
         assertEquals("In activity_info.xml, the TextView text_view_phone does not have " +
                         "the clickable and onClick properties set.",
-                address_set_correct,true);
+                address_set_correct,false);
     }
 
     public ArrayList<XMLTestHelpers.ViewContainer> readLayoutXML(String layoutFileName) {
