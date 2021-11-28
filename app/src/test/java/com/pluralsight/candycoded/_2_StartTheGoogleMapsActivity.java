@@ -185,7 +185,7 @@ public class _2_StartTheGoogleMapsActivity {
             inputStream = classLoader.getResourceAsStream("res/layout/activity_info.xml");
 
             XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
-            factory.setNamespaceAware(false);
+            factory.setNamespaceAware(true);
             XmlPullParser parser = factory.newPullParser();
             parser.setInput(inputStream, null);
             parser.nextTag();
